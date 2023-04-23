@@ -7,11 +7,11 @@ setup(
     version='0.1',
     install_requires=[
         "networkx",
-        "matplotlib",
         "xxhash",
         "tqdm",
         "loguru",
-        "luaparser"
+        "luaparser",
+        "pyvis"
     ],
     entry_points={
         'console_scripts': [
