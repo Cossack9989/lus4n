@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 
 from joblib import dump, load
 
-from graph import scan_path
+from lus4n.graph import scan_path
 
 
 parser = argparse.ArgumentParser(description="Lus4n: lua call graph generation")
@@ -32,7 +32,8 @@ else:
     storage = os.path.join(temp_dir, str(uuid.uuid4())) + '.jb'
 
 
-if __name__ == "__main__":
+def main():
+
     if args.path:
         d, g = scan_path(args.path, None, False)
         dump(g, storage)
@@ -60,3 +61,7 @@ if __name__ == "__main__":
             plt.show()
         else:
             print(f"no such node {args.query}")
+
+
+if __name__ == "__main__":
+    main()

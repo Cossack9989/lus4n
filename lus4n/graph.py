@@ -4,7 +4,6 @@ import xxhash
 import networkx as nx
 
 from tqdm import tqdm
-from joblib import dump
 from loguru import logger
 from luaparser import ast
 from luaparser.astnodes import *
