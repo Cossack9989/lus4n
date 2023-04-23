@@ -6,5 +6,6 @@
 
 generate lua call graph by AST
 
-- `python3 cli.py -p ./rootfs/ -s ./test.jb`
-- `python3 cli.py -s ./test.jb -q os.execute`
+After installation:
+- `lus4n -p ./rootfs/ -s ./test.jb`
+- `lus4n -s ./test.jb -q os.execute`
